@@ -65,6 +65,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		2947771F22E0A94700BEE66F /* Tajweed Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tajweed Models";
+			sourceTree = "<group>";
+		};
 		29568E5022E096C5003DC544 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +131,7 @@
 		29F3BB9322E098E900906843 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2947771F22E0A94700BEE66F /* Tajweed Models */,
 				29F3BBA322E09C3300906843 /* DataModels */,
 				29F3BBA222E09C1B00906843 /* DataBase */,
 			);
