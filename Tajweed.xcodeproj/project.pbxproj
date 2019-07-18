@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29568E5D22E096C5003DC544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29568E5C22E096C5003DC544 /* AppDelegate.swift */; };
+		29568E6422E096C6003DC544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29568E6322E096C6003DC544 /* Assets.xcassets */; };
+		29568E6722E096C6003DC544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29568E6522E096C6003DC544 /* LaunchScreen.storyboard */; };
+		29F3BB9922E09BF500906843 /* SurrahListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BB9622E09BF500906843 /* SurrahListViewController.swift */; };
+		29F3BB9A22E09BF500906843 /* SurrahListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BB9722E09BF500906843 /* SurrahListViewCell.swift */; };
+		29F3BB9B22E09BF500906843 /* SurrahList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F3BB9822E09BF500906843 /* SurrahList.storyboard */; };
+		29F3BB9F22E09C0900906843 /* SurrahVerse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F3BB9C22E09C0900906843 /* SurrahVerse.storyboard */; };
+		29F3BBA022E09C0900906843 /* SurrahVerseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BB9D22E09C0900906843 /* SurrahVerseViewController.swift */; };
+		29F3BBA122E09C0900906843 /* SurrahVerseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BB9E22E09C0900906843 /* SurrahVerseViewCell.swift */; };
+		29F3BBA622E09C4800906843 /* quranlite.db in Resources */ = {isa = PBXBuildFile; fileRef = 29F3BBA422E09C4800906843 /* quranlite.db */; };
+		29F3BBA722E09C4800906843 /* DatabaseServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BBA522E09C4800906843 /* DatabaseServiceProvider.swift */; };
+		29F3BBAA22E09C5600906843 /* SurrahList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BBA822E09C5600906843 /* SurrahList.swift */; };
+		29F3BBAB22E09C5600906843 /* SurrahVerses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BBA922E09C5600906843 /* SurrahVerses.swift */; };
+		93A08E6FC646531E46ECBD96 /* Pods_Tajweed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F346ED2E4BBBDFDEFFF41517 /* Pods_Tajweed.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29568E5922E096C5003DC544 /* Tajweed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tajweed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29568E5C22E096C5003DC544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29568E6322E096C6003DC544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29568E6622E096C6003DC544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29568E6822E096C6003DC544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F3BB9622E09BF500906843 /* SurrahListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurrahListViewController.swift; sourceTree = "<group>"; };
+		29F3BB9722E09BF500906843 /* SurrahListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurrahListViewCell.swift; sourceTree = "<group>"; };
+		29F3BB9822E09BF500906843 /* SurrahList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SurrahList.storyboard; sourceTree = "<group>"; };
+		29F3BB9C22E09C0900906843 /* SurrahVerse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SurrahVerse.storyboard; sourceTree = "<group>"; };
+		29F3BB9D22E09C0900906843 /* SurrahVerseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurrahVerseViewController.swift; sourceTree = "<group>"; };
+		29F3BB9E22E09C0900906843 /* SurrahVerseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurrahVerseViewCell.swift; sourceTree = "<group>"; };
+		29F3BBA422E09C4800906843 /* quranlite.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = quranlite.db; sourceTree = "<group>"; };
+		29F3BBA522E09C4800906843 /* DatabaseServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseServiceProvider.swift; sourceTree = "<group>"; };
+		29F3BBA822E09C5600906843 /* SurrahList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurrahList.swift; sourceTree = "<group>"; };
+		29F3BBA922E09C5600906843 /* SurrahVerses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurrahVerses.swift; sourceTree = "<group>"; };
+		526A15C551372F56738747E1 /* Pods-Tajweed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tajweed.debug.xcconfig"; path = "Target Support Files/Pods-Tajweed/Pods-Tajweed.debug.xcconfig"; sourceTree = "<group>"; };
+		AAD2D1CFAE026BB25E6DD567 /* Pods-Tajweed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tajweed.release.xcconfig"; path = "Target Support Files/Pods-Tajweed/Pods-Tajweed.release.xcconfig"; sourceTree = "<group>"; };
+		F346ED2E4BBBDFDEFFF41517 /* Pods_Tajweed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tajweed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29568E5622E096C5003DC544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A08E6FC646531E46ECBD96 /* Pods_Tajweed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		137BEC3067B673CABC1CE148 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				526A15C551372F56738747E1 /* Pods-Tajweed.debug.xcconfig */,
+				AAD2D1CFAE026BB25E6DD567 /* Pods-Tajweed.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		29568E5022E096C5003DC544 = {
+			isa = PBXGroup;
+			children = (
+				29568E5B22E096C5003DC544 /* Tajweed */,
+				29568E5A22E096C5003DC544 /* Products */,
+				137BEC3067B673CABC1CE148 /* Pods */,
+				D454A3021D772DF4326F2E8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29568E5A22E096C5003DC544 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29568E5922E096C5003DC544 /* Tajweed.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29568E5B22E096C5003DC544 /* Tajweed */ = {
+			isa = PBXGroup;
+			children = (
+				29F3BB9322E098E900906843 /* Services */,
+				29F3BB9222E098E100906843 /* Scenes */,
+				29F3BB9122E098D700906843 /* Resources */,
+				29F3BB9022E098CC00906843 /* App */,
+			);
+			path = Tajweed;
+			sourceTree = "<group>";
+		};
+		29F3BB9022E098CC00906843 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				29568E5C22E096C5003DC544 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		29F3BB9122E098D700906843 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29568E6322E096C6003DC544 /* Assets.xcassets */,
+				29568E6522E096C6003DC544 /* LaunchScreen.storyboard */,
+				29568E6822E096C6003DC544 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29F3BB9222E098E100906843 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				29F3BB9522E09BBE00906843 /* SurrahVerse */,
+				29F3BB9422E09BB400906843 /* SurrahList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		29F3BB9322E098E900906843 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				29F3BBA322E09C3300906843 /* DataModels */,
+				29F3BBA222E09C1B00906843 /* DataBase */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		29F3BB9422E09BB400906843 /* SurrahList */ = {
+			isa = PBXGroup;
+			children = (
+				29F3BB9622E09BF500906843 /* SurrahListViewController.swift */,
+				29F3BB9822E09BF500906843 /* SurrahList.storyboard */,
+				29F3BB9722E09BF500906843 /* SurrahListViewCell.swift */,
+			);
+			path = SurrahList;
+			sourceTree = "<group>";
+		};
+		29F3BB9522E09BBE00906843 /* SurrahVerse */ = {
+			isa = PBXGroup;
+			children = (
+				29F3BB9D22E09C0900906843 /* SurrahVerseViewController.swift */,
+				29F3BB9C22E09C0900906843 /* SurrahVerse.storyboard */,
+				29F3BB9E22E09C0900906843 /* SurrahVerseViewCell.swift */,
+			);
+			path = SurrahVerse;
+			sourceTree = "<group>";
+		};
+		29F3BBA222E09C1B00906843 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				29F3BBA522E09C4800906843 /* DatabaseServiceProvider.swift */,
+				29F3BBA422E09C4800906843 /* quranlite.db */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		29F3BBA322E09C3300906843 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				29F3BBA822E09C5600906843 /* SurrahList.swift */,
+				29F3BBA922E09C5600906843 /* SurrahVerses.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		D454A3021D772DF4326F2E8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F346ED2E4BBBDFDEFFF41517 /* Pods_Tajweed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29568E5822E096C5003DC544 /* Tajweed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29568E6B22E096C6003DC544 /* Build configuration list for PBXNativeTarget "Tajweed" */;
+			buildPhases = (
+				27392A4DE627ABC14E218ADC /* [CP] Check Pods Manifest.lock */,
+				29568E5522E096C5003DC544 /* Sources */,
+				29568E5622E096C5003DC544 /* Frameworks */,
+				29568E5722E096C5003DC544 /* Resources */,
+				73C7B58333ECAA141160F670 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tajweed;
+			productName = Tajweed;
+			productReference = 29568E5922E096C5003DC544 /* Tajweed.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29568E5122E096C5003DC544 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Dev139;
+				TargetAttributes = {
+					29568E5822E096C5003DC544 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 29568E5422E096C5003DC544 /* Build configuration list for PBXProject "Tajweed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29568E5022E096C5003DC544;
+			productRefGroup = 29568E5A22E096C5003DC544 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29568E5822E096C5003DC544 /* Tajweed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29568E5722E096C5003DC544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F3BB9F22E09C0900906843 /* SurrahVerse.storyboard in Resources */,
+				29568E6722E096C6003DC544 /* LaunchScreen.storyboard in Resources */,
+				29F3BB9B22E09BF500906843 /* SurrahList.storyboard in Resources */,
+				29568E6422E096C6003DC544 /* Assets.xcassets in Resources */,
+				29F3BBA622E09C4800906843 /* quranlite.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27392A4DE627ABC14E218ADC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tajweed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73C7B58333ECAA141160F670 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tajweed/Pods-Tajweed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tajweed/Pods-Tajweed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tajweed/Pods-Tajweed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29568E5522E096C5003DC544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F3BBA122E09C0900906843 /* SurrahVerseViewCell.swift in Sources */,
+				29F3BBAB22E09C5600906843 /* SurrahVerses.swift in Sources */,
+				29F3BBA722E09C4800906843 /* DatabaseServiceProvider.swift in Sources */,
+				29F3BBA022E09C0900906843 /* SurrahVerseViewController.swift in Sources */,
+				29F3BBAA22E09C5600906843 /* SurrahList.swift in Sources */,
+				29568E5D22E096C5003DC544 /* AppDelegate.swift in Sources */,
+				29F3BB9922E09BF500906843 /* SurrahListViewController.swift in Sources */,
+				29F3BB9A22E09BF500906843 /* SurrahListViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29568E6522E096C6003DC544 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29568E6622E096C6003DC544 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29568E6922E096C6003DC544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29568E6A22E096C6003DC544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29568E6C22E096C6003DC544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 526A15C551372F56738747E1 /* Pods-Tajweed.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Tajweed/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dev139.Tajweed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29568E6D22E096C6003DC544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD2D1CFAE026BB25E6DD567 /* Pods-Tajweed.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Tajweed/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dev139.Tajweed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29568E5422E096C5003DC544 /* Build configuration list for PBXProject "Tajweed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29568E6922E096C6003DC544 /* Debug */,
+				29568E6A22E096C6003DC544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29568E6B22E096C6003DC544 /* Build configuration list for PBXNativeTarget "Tajweed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29568E6C22E096C6003DC544 /* Debug */,
+				29568E6D22E096C6003DC544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29568E5122E096C5003DC544 /* Project object */;
+}
