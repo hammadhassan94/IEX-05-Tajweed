@@ -20,6 +20,8 @@ class SurrahListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(loadJson(filename: "test"))
+        
         //We connect database on entering point of main storyborad named SurrahTableViewController
         connectDatabase()
         

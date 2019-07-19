@@ -1,0 +1,86 @@
+{
+    "a":[
+        {
+            "person":[
+                {
+                    "end": 8,
+                    "rule": "hamzat_wasl",
+                    "start": 7
+                },
+                {
+                    "end": 16,
+                    "rule": "hamzat_wasl",
+                    "start": 15
+                },
+                {
+                    "end": 17,
+                    "rule": "lam_shamsiyyah",
+                    "start": 16
+                },
+                {
+                    "end": 25,
+                    "rule": "madd_2",
+                    "start": 24
+                },
+                {
+                    "end": 29,
+                    "rule": "hamzat_wasl",
+                    "start": 28
+                },
+                {
+                    "end": 30,
+                    "rule": "lam_shamsiyyah",
+                    "start": 29
+                },
+                {
+                    "end": 36,
+                    "rule": "madd_246",
+                    "start": 35
+                }
+            ],
+            "ayah": 1,
+            "surah": 1
+        },
+        {
+            "person":[
+                {
+                    "end": 8,
+                    "rule": "hamzat_wasl",
+                    "start": 7
+                },
+                {
+                    "end": 16,
+                    "rule": "hamzat_wasl",
+                    "start": 15
+                },
+                {
+                    "end": 17,
+                    "rule": "lam_shamsiyyah",
+                    "start": 16
+                },
+                {
+                    "end": 25,
+                    "rule": "madd_2",
+                    "start": 24
+                },
+                {
+                    "end": 29,
+                    "rule": "hamzat_wasl",
+                    "start": 28
+                },
+                {
+                    "end": 30,
+                    "rule": "lam_shamsiyyah",
+                    "start": 29
+                },
+                {
+                    "end": 36,
+                    "rule": "madd_246",
+                    "start": 35
+                }
+            ],
+            "ayah": 1,
+            "surah": 1
+        }
+    ]
+}
