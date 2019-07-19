@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2947772322E195F100BEE66F /* tajweed.hafs.uthmani-pause-sajdah.json in Resources */ = {isa = PBXBuildFile; fileRef = 2947772222E195F100BEE66F /* tajweed.hafs.uthmani-pause-sajdah.json */; };
 		29568E5D22E096C5003DC544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29568E5C22E096C5003DC544 /* AppDelegate.swift */; };
 		29568E6422E096C6003DC544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29568E6322E096C6003DC544 /* Assets.xcassets */; };
 		29568E6722E096C6003DC544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29568E6522E096C6003DC544 /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2947772222E195F100BEE66F /* tajweed.hafs.uthmani-pause-sajdah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tajweed.hafs.uthmani-pause-sajdah.json"; sourceTree = "<group>"; };
 		29568E5922E096C5003DC544 /* Tajweed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tajweed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29568E5C22E096C5003DC544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29568E6322E096C6003DC544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,11 +67,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		2947771F22E0A94700BEE66F /* Tajweed Models */ = {
+		2947771F22E0A94700BEE66F /* Tajweed Rules */ = {
+			isa = PBXGroup;
+			children = (
+				2947772122E195AA00BEE66F /* Data Models */,
+				2947772022E1959D00BEE66F /* Resources */,
+			);
+			path = "Tajweed Rules";
+			sourceTree = "<group>";
+		};
+		2947772022E1959D00BEE66F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2947772222E195F100BEE66F /* tajweed.hafs.uthmani-pause-sajdah.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2947772122E195AA00BEE66F /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "Tajweed Models";
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 		29568E5022E096C5003DC544 = {
@@ -131,7 +150,7 @@
 		29F3BB9322E098E900906843 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				2947771F22E0A94700BEE66F /* Tajweed Models */,
+				2947771F22E0A94700BEE66F /* Tajweed Rules */,
 				29F3BBA322E09C3300906843 /* DataModels */,
 				29F3BBA222E09C1B00906843 /* DataBase */,
 			);
@@ -249,6 +268,7 @@
 				29F3BB9B22E09BF500906843 /* SurrahList.storyboard in Resources */,
 				29568E6422E096C6003DC544 /* Assets.xcassets in Resources */,
 				29F3BBA622E09C4800906843 /* quranlite.db in Resources */,
+				2947772322E195F100BEE66F /* tajweed.hafs.uthmani-pause-sajdah.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
