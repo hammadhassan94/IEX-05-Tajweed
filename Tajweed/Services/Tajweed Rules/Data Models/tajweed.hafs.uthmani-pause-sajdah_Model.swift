@@ -7,46 +7,11 @@
 //
 
 import Foundation
-
-//struct Annotations: Decodable {
-//    var end: String
-//    var rule: String
-//    var start: String
-//}
-//
-////struct AyyahOfSurrah: Decodable{
-////    var annotations: [Annotations]
-////    var ayah: String
-////    var surah: String
-////}
-//
-//struct Responsedata: Decodable{
-//    var varse: [Annotations]
-//}
-//
-//func loadJson(fiilename filename: String) -> [Annotations]? {
-//    if let url = Bundle.main.url(forResource: filename, withExtension: "json"){
-//        do{
-//            let data = try Data(contentsOf: url)
-//            let decoder = JSONDecoder()
-//            let jsonData = try decoder.decode(Responsedata.self, from: data)
-//            return jsonData.varse
-//        }
-//        catch{
-//            print("error")
-//        }
-//    }
-//    else{
-//        print("file not found")
-//    }
-//    return nil
-//}
-
+import UIKit
 
 struct Quran:Decodable {
     var quran: [ResponseData]
 }
-
 struct ResponseData: Decodable {
     var annotations: [Annotations]
     var ayah: Int
@@ -57,17 +22,51 @@ struct Annotations : Decodable {
     var rule: String
     var start: Int
 }
+struct Ayyah: Decodable {
+    var annotations = [Annotations]()
+    var ayah = Int()
+}
+struct FinalResult: Decodable {
+    var ayyah = [Ayyah]()
+}
 
-func loadJson(filename fileName: String) -> Quran? {
+func loadJson(fileName: String, surrahnumber: Int) -> FinalResult? {
+    var final = FinalResult()
+    var temp = Ayyah()
     if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
         do {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
             let jsonData = try decoder.decode(Quran.self, from: data)
-            return jsonData
+            
+            for data in jsonData.quran
+            {
+                if (data.surah == surrahnumber) {
+                    temp.ayah = data.ayah
+                    temp.annotations = data.annotations
+                    final.ayyah.append(temp)
+                }
+            }
+            return final
         } catch {
             print("error:\(error)")
         }
     }
     return nil
+}
+
+
+func CharOnColor(label: UILabel, color: UIColor, index: Int, length: Int) {
+    
+    //First we get the text.
+    let string = label.text
+    
+    //Set Range
+    let range = NSRange(location: index, length: length)
+    let attributedString = NSMutableAttributedString(string: string!, attributes: nil)
+    
+    //Set label
+    attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
+    label.attributedText = attributedString
+    
 }

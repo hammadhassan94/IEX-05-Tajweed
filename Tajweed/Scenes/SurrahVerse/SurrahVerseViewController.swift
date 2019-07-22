@@ -13,22 +13,17 @@ class SurrahVerseViewController: UITableViewController {
     var surrahData: SurrahList!
     var surrahVerse: SurrahVerses!
     
-    var jsonData: Quran!
+    var jsonData: FinalResult!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         surrahVerse = getSurrah(surrahId: surrahData.surrahId)
         
-        jsonData = loadJson(filename: "tajweed_hafs_uthmani-pause-sajdah")
-        
-        for surrah in jsonData.quran{
-            print("\(surrah.ayah)    \(surrah.surah)")
-            for surrahs in surrah.annotations{
-                print("\(surrahs) \n")
+        jsonData = loadJson(fileName: "tajweed_hafs_uthmani-pause-sajdah", surrahnumber: surrahData.surrahId)
 
-            }
-        }
+       
+        
     }
     
     // MARK: - Table view data source
@@ -56,6 +51,13 @@ class SurrahVerseViewController: UITableViewController {
         
         cell.verseText.text = surrahSingleVerse
         
+        for data in jsonData.ayyah {
+            if(data.ayah == indexPath.row + 1) {
+                for annot in data.annotations {
+                    CharOnColor(label: cell.verseText, color: UIColor.red, index: annot.start, length: annot.end - annot.start)
+                }
+            }
+        }
         
         return cell
     }
