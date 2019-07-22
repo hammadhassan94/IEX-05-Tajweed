@@ -43,28 +43,28 @@ import Foundation
 //}
 
 
-struct A:Decodable {
-    var a: [ResponseData]
+struct Quran:Decodable {
+    var quran: [ResponseData]
 }
 
 struct ResponseData: Decodable {
-    var person: [Person]
+    var annotations: [Annotations]
     var ayah: Int
     var surah: Int
 }
-struct Person : Decodable {
+struct Annotations : Decodable {
     var end: Int
     var rule: String
     var start: Int
 }
 
-func loadJson(filename fileName: String) -> [ResponseData]? {
+func loadJson(filename fileName: String) -> Quran? {
     if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
         do {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
-            let jsonData = try decoder.decode(A.self, from: data)
-            return jsonData.a
+            let jsonData = try decoder.decode(Quran.self, from: data)
+            return jsonData
         } catch {
             print("error:\(error)")
         }

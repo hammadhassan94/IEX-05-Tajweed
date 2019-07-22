@@ -11,14 +11,24 @@ import UIKit
 class SurrahVerseViewController: UITableViewController {
     
     var surrahData: SurrahList!
-    
     var surrahVerse: SurrahVerses!
+    
+    var jsonData: Quran!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         surrahVerse = getSurrah(surrahId: surrahData.surrahId)
         
+        jsonData = loadJson(filename: "tajweed_hafs_uthmani-pause-sajdah")
+        
+        for surrah in jsonData.quran{
+            print("\(surrah.ayah)    \(surrah.surah)")
+            for surrahs in surrah.annotations{
+                print("\(surrahs) \n")
+
+            }
+        }
     }
     
     // MARK: - Table view data source

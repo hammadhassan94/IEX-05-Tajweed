@@ -11,16 +11,11 @@ import UIKit
 
 class SurrahListViewController: UITableViewController {
     
-    
-    
     /// List of surrahs that can be used to build burgers
     private var surrahList = [SurrahList]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(loadJson(filename: "test"))
         
         //We connect database on entering point of main storyborad named SurrahTableViewController
         connectDatabase()
