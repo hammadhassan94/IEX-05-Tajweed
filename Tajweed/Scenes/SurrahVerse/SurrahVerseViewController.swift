@@ -21,8 +21,6 @@ class SurrahVerseViewController: UITableViewController {
         surrahVerse = getSurrah(surrahId: surrahData.surrahId)
         
         jsonData = loadJson(fileName: "tajweed_hafs_uthmani-pause-sajdah", surrahnumber: surrahData.surrahId)
-
-       
         
     }
     
@@ -48,20 +46,30 @@ class SurrahVerseViewController: UITableViewController {
             cell.verseText.text = surrahSingleVerse
             cell.verseText.textAlignment = NSTextAlignment.center
         }
-        
-        cell.verseText.text = surrahSingleVerse
-        
-        for data in jsonData.ayyah {
-            if(data.ayah == indexPath.row + 1) {
-                for annot in data.annotations {
-                    CharOnColor(label: cell.verseText, color: UIColor.red, index: annot.start, length: annot.end - annot.start)
-                }
-            }
+        else{
+            cell.verseText.text = surrahSingleVerse
         }
         
+        for data in jsonData.ayyah {
+            let string = cell.verseText.text
+            
+            var attributedString: NSMutableAttributedString!
+            attributedString = NSMutableAttributedString(string: string!, attributes: nil)
+            
+            if(data.ayah == indexPath.row + 1) {
+                
+                for annot in data.annotations {
+                    //charOnRuleColor(label: cell.verseText, color: UIColor.red, index: annot.start, length: annot.end - annot.start)
+                    
+                    let range = NSRange(location: annot.start, length: annot.end - annot.start)
+                    
+                    attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range)
+                }
+                cell.verseText.attributedText = attributedString
+            }
+        }
         return cell
     }
-    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         

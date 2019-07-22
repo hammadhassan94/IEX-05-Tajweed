@@ -56,7 +56,7 @@ func loadJson(fileName: String, surrahnumber: Int) -> FinalResult? {
 }
 
 
-func CharOnColor(label: UILabel, color: UIColor, index: Int, length: Int) {
+func charOnRuleColor(label: UILabel, color: UIColor, index: Int, length: Int) {
     
     //First we get the text.
     let string = label.text
