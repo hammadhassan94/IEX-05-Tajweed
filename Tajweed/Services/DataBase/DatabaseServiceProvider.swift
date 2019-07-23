@@ -15,7 +15,7 @@ func connectDatabase(){
     
     
     do {
-        dbConVar = try Connection((Bundle.main.resourceURL?.appendingPathComponent("quranlite.db").path)!)
+        dbConVar = try Connection((Bundle.main.resourceURL?.appendingPathComponent("quran-uthmani.db").path)!)
     }
     catch  {
     }
