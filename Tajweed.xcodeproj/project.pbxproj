@@ -13,6 +13,7 @@
 		296F2B6C22E1BC6100E783F0 /* tajweed.hafs.uthmani-pause-sajdah_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296F2B6B22E1BC6100E783F0 /* tajweed.hafs.uthmani-pause-sajdah_Model.swift */; };
 		29A8949222E59440004281FC /* tajweed_hafs_uthmani-pause-sajdah.json in Resources */ = {isa = PBXBuildFile; fileRef = 29A8949122E5943F004281FC /* tajweed_hafs_uthmani-pause-sajdah.json */; };
 		29A8949522E6ED7B004281FC /* quran-uthmani.db in Resources */ = {isa = PBXBuildFile; fileRef = 29A8949422E6ED7B004281FC /* quran-uthmani.db */; };
+		29A8949722E732ED004281FC /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8949622E732ED004281FC /* ColorScheme.swift */; };
 		29F3BB9922E09BF500906843 /* SurrahListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BB9622E09BF500906843 /* SurrahListViewController.swift */; };
 		29F3BB9A22E09BF500906843 /* SurrahListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BB9722E09BF500906843 /* SurrahListViewCell.swift */; };
 		29F3BB9B22E09BF500906843 /* SurrahList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F3BB9822E09BF500906843 /* SurrahList.storyboard */; };
@@ -34,6 +35,7 @@
 		296F2B6B22E1BC6100E783F0 /* tajweed.hafs.uthmani-pause-sajdah_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "tajweed.hafs.uthmani-pause-sajdah_Model.swift"; sourceTree = "<group>"; };
 		29A8949122E5943F004281FC /* tajweed_hafs_uthmani-pause-sajdah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tajweed_hafs_uthmani-pause-sajdah.json"; sourceTree = "<group>"; };
 		29A8949422E6ED7B004281FC /* quran-uthmani.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "quran-uthmani.db"; sourceTree = "<group>"; };
+		29A8949622E732ED004281FC /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		29F3BB9622E09BF500906843 /* SurrahListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurrahListViewController.swift; sourceTree = "<group>"; };
 		29F3BB9722E09BF500906843 /* SurrahListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurrahListViewCell.swift; sourceTree = "<group>"; };
 		29F3BB9822E09BF500906843 /* SurrahList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SurrahList.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				296F2B6B22E1BC6100E783F0 /* tajweed.hafs.uthmani-pause-sajdah_Model.swift */,
+				29A8949622E732ED004281FC /* ColorScheme.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				296F2B6C22E1BC6100E783F0 /* tajweed.hafs.uthmani-pause-sajdah_Model.swift in Sources */,
 				29F3BBA022E09C0900906843 /* SurrahVerseViewController.swift in Sources */,
 				29F3BBAA22E09C5600906843 /* SurrahList.swift in Sources */,
+				29A8949722E732ED004281FC /* ColorScheme.swift in Sources */,
 				29568E5D22E096C5003DC544 /* AppDelegate.swift in Sources */,
 				29F3BB9922E09BF500906843 /* SurrahListViewController.swift in Sources */,
 				29F3BB9A22E09BF500906843 /* SurrahListViewCell.swift in Sources */,

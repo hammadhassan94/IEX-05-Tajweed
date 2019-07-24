@@ -10,10 +10,10 @@ import UIKit
 
 class SurrahVerseViewController: UITableViewController {
     
-    var surrahData: SurrahList!
-    var surrahVerse: SurrahVerses!
+    internal var surrahData: SurrahList!
+    private var surrahVerse: SurrahVerses!
     
-    var jsonData: FinalResult!
+    private var jsonData: FinalResult!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,9 +61,17 @@ class SurrahVerseViewController: UITableViewController {
                 for annot in data.annotations {
                     //charOnRuleColor(label: cell.verseText, color: UIColor.red, index: annot.start, length: annot.end - annot.start)
                     
-                    let range = NSRange(location: annot.start, length: annot.end - annot.start)
+                    if(surrahVerse.surrahNumber != 1 && data.ayah  == 1) {
+                        let range = NSRange(location: annot.start - 39, length: annot.end - annot.start)
+                        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range)
+                        
+                    }else{
+                        let range = NSRange(location: annot.start, length: annot.end - annot.start)
+                        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range)
+                        
+                    }
                     
-                    attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range)
+                    
                 }
                 cell.verseText.attributedText = attributedString
             }
