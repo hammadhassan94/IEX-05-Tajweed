@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Quran:Decodable {
+struct Quran: Decodable {
     var quran: [ResponseData]
 }
 struct ResponseData: Decodable {

@@ -9,7 +9,24 @@
 import Foundation
 import UIKit
 
-class ColorScheme {
-    var schemeRule = [String:UIColor]()
+struct ColorScheme: Codable {
+    let schemeRule: [String:String]
 }
 
+
+
+
+
+
+
+
+// MARK:- Solution of making UIcolor codable
+
+//Solution I found is to create CIColor from the UIColor then convert back:
+//
+//Convert to string:
+//
+//CIColor(color: UIColor.blue).stringRepresentation
+//Convert to color:
+//
+//UIColor(ciColor: CIColor(string: databaseColorString))
