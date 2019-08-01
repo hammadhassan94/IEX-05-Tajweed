@@ -61,7 +61,7 @@ class SurrahVerseViewController: UITableViewController {
                 for annot in data.annotations {
                     //charOnRuleColor(label: cell.verseText, color: UIColor.red, index: annot.start, length: annot.end - annot.start)
                     
-                    if(surrahVerse.surrahNumber != 1 && data.ayah  == 1) {
+                    if(surrahVerse.surrahNumber != 1 && surrahVerse.surrahNumber != 9 && data.ayah  == 1) {
                         let range = NSRange(location: annot.start - 39, length: annot.end - annot.start)
                         attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range)
                         

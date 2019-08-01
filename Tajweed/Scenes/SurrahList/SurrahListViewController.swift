@@ -13,9 +13,78 @@ class SurrahListViewController: UITableViewController {
     
     /// List of surrahs that can be used to build burgers
     private var surrahList = [SurrahList]()
+    public var colorAnnotations = [Category]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        var temp = Category()
+        temp.categoryName = "Ghunnah"
+        temp.schemes.schemeRule["ghunnah"] = CIColor(color: UIColor.green).stringRepresentation
+        colorAnnotations.append(temp)
+        
+        
+        
+        temp = Category()
+        temp.categoryName = "Idghaam"
+        temp.schemes.schemeRule["idghaam_ghunnah"] = CIColor(color: UIColor()).stringRepresentation
+        temp.schemes.schemeRule["idghaam_no_ghunnah"] = CIColor(color: UIColor()).stringRepresentation
+        temp.schemes.schemeRule["idghaam_mutajaanisain"] = CIColor(color: UIColor()).stringRepresentation
+        temp.schemes.schemeRule["idghaam_mutaqaaribain"] = CIColor(color: UIColor()).stringRepresentation
+        temp.schemes.schemeRule["idghaam_shafawi"] = CIColor(color: UIColor()).stringRepresentation
+        colorAnnotations.append(temp)
+        
+        
+        temp = Category()
+        temp.categoryName = "Ikhfa"
+        temp.schemes.schemeRule["ikhfa"] = CIColor(color: UIColor()).stringRepresentation
+        temp.schemes.schemeRule["ikhfa_shafawi"] = CIColor(color: UIColor()).stringRepresentation
+        colorAnnotations.append(temp)
+        
+        temp = Category()
+        temp.categoryName = "Iqlab"
+        temp.schemes.schemeRule["iqlab"] = CIColor(color: UIColor()).stringRepresentation
+        colorAnnotations.append(temp)
+        
+        temp = Category()
+        temp.categoryName = "Madd"
+        temp.schemes.schemeRule["madd_2"] = CIColor(color: UIColor()).stringRepresentation
+        temp.schemes.schemeRule["madd_246"] = CIColor(color: UIColor()).stringRepresentation
+        temp.schemes.schemeRule["madd_muttasil"] = CIColor(color: UIColor()).stringRepresentation
+        temp.schemes.schemeRule["madd_munfasil"] = CIColor(color: UIColor()).stringRepresentation
+        temp.schemes.schemeRule["madd_6"] = CIColor(color: UIColor()).stringRepresentation
+        colorAnnotations.append(temp)
+        
+        temp = Category()
+        temp.categoryName = "Qalqalah"
+        temp.schemes.schemeRule["qalqalah"] = CIColor(color: UIColor()).stringRepresentation
+        colorAnnotations.append(temp)
+        
+        temp = Category()
+        temp.categoryName = "Hamzat al-Wasl"
+        temp.schemes.schemeRule["hamzat_wasl"] = CIColor(color: UIColor()).stringRepresentation
+        colorAnnotations.append(temp)
+        
+        temp = Category()
+        temp.categoryName = "Lam al-Shamsiyyah"
+        temp.schemes.schemeRule["lam_shamsiyyah"] = CIColor(color: UIColor()).stringRepresentation
+        colorAnnotations.append(temp)
+        
+        temp = Category()
+        temp.categoryName = "Silent"
+        temp.schemes.schemeRule["silent"] = CIColor(color: UIColor()).stringRepresentation
+        colorAnnotations.append(temp)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         //We connect database on entering point of main storyborad named SurrahTableViewController
         connectDatabase()
