@@ -1,2 +1,2 @@
 # Tajweed
- An app to explore tajweed rules of Quran
+ In progress or say incomplete app to explore tajweed rules of Quran
